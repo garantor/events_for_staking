@@ -12,8 +12,8 @@ from decouple import config
 
 staking_address = "GDAZBTSWKYQUNG2RLHEX2PZA3B3WJR5W4QDODPYA5I2MF3XYSGZ3GHBE"
 HORIZON_URL = "https://horizon-testnet.stellar.org"
-# base_url = config("BASE_URL")
-event_url = "http://127.0.0.1:8000/listener" or "https://stablemvp.herokuapp.com/listener"
+event_url = config("BASE_URL")
+# event_url = "https://stablemvp.herokuapp.com/listener"
 
 
 """
