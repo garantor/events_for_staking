@@ -10,10 +10,10 @@ logging.basicConfig(level=logging.INFO,  format="%(levelname)s %(message)s")
 from stellar_sdk import AiohttpClient, ServerAsync
 from decouple import config
 
-staking_address = config("STAKING_ADDRESS")
-HORIZON_URL = config("HORIZON_URL")
+staking_address = "GDAZBTSWKYQUNG2RLHEX2PZA3B3WJR5W4QDODPYA5I2MF3XYSGZ3GHBE"
+HORIZON_URL = "https://horizon-testnet.stellar.org"
 # base_url = config("BASE_URL")
-event_url = config("listener")
+event_url = "http://127.0.0.1:8000/listener" or "https://stablemvp.herokuapp.com/listener"
 
 
 """
